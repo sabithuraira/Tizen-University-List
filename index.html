@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="./lib/tau/mobile/theme/default/tau.min.css">
+    <link rel="stylesheet"  href="./css/style.css">
+    <script type="text/javascript" src="./lib/tau/mobile/js/tau.min.js" data-build-remove="false"></script>
+</head>
+
+<body>
+    <div class="ui-page" id="searchInputPage">
+        <div class="ui-header" data-position ="fixed" >
+            <h1>University List</h1>
+        </div>
+        <div class="ui-content" id="search-input-content">
+            <div class="search-input-area" >
+                <input type="search" name="search" id="demo-page-search-input" value=""/>
+            </div>
+            <ul id="searchList" class="ui-listview"></ul>
+            
+            <div id="btn_popup" class="ui-popup">
+				<div class="ui-popup-header popup-2line-title">
+					<h1 id="pop-header1" DIR="LTR">Main text</h1>
+					<h2 id="pop-header2">sub text</h2>
+			    </div>
+	            <div class="ui-popup-content popup-content-padding" id="pop-body">
+	                Lorem ipsum dolor sit amet,
+	                consectetur adiptiscing elit, sed
+	                doei usmod tempore sit ipsum
+	            </div>
+	            <div class="ui-popup-footer">
+	                <a id="btn-close" class="ui-btn" data-rel="back" data-inline="true">Cancel</a>
+	            </div>
+	        </div>
+        </div>
+        <script src="./lib/jquery.js"></script>
+        <script src="./js/app.js"></script>
+        <script src="./js/searchinput.js"></script>
+    </div>
+</body>
+</html>
