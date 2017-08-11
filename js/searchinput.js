@@ -41,18 +41,18 @@
 	page.addEventListener("pagebeforeshow", function() {
 		searchHandlerBound = searchHandler.bind(this);
 		searchClearBound = searchClear.bind(this);
-		search.addEventListener("keyup", searchHandlerBound, false);
+		search.addEventListener("change", searchHandlerBound, false);
 		search.addEventListener("search", searchClearBound, false);
 	});
 
 	/**
 	 * pagehide event handler
 	 * Destroys and removes event listeners
-	 */
-	page.addEventListener("pagehide", function() {
-		search.removeEventListener("keyup", searchHandlerBound, false);
-		search.removeEventListener("search", searchClearBound, false);
-	});
+//	 */
+//	page.addEventListener("pagehide", function() {
+//		search.removeEventListener("change", searchHandlerBound, false);
+//		search.removeEventListener("search", searchClearBound, false);
+//	});
 
 }());
 
